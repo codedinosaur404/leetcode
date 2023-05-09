@@ -3,7 +3,6 @@ defmodule Easy.LongestCommonPrefix do
   def longest_common_prefix(strs) do
     strs
     |> Enum.map(&String.graphemes/1)
-    |> IO.inspect()
     |> three_is_a_pattern([])
     |> Enum.join()
   end
