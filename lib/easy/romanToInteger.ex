@@ -1,4 +1,4 @@
-defmodule RomanToInteger do
+defmodule Easy.RomanToInteger do
 
 def roman_to_int(s) do
     s
