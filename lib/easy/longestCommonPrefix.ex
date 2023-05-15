@@ -19,7 +19,9 @@ defmodule Easy.LongestCommonPrefix do
 
   defp recurse(_, [[]], acc), do: acc
   defp recurse(_, [[], _], acc), do: acc
-  defp recurse([h], arrays, acc), do: arrays |> Enum.map(&tl/1) |> three_is_a_pattern(acc ++ [h])
+  defp recurse([h], arrays, acc), do: arrays
+    |> Enum.map(&tl/1)
+    |> three_is_a_pattern(acc ++ [h])
   defp recurse(_more_than_one, _arrays, acc), do: acc
 
   defp head([]), do: ""
