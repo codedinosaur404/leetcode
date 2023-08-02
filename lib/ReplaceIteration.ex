@@ -12,6 +12,7 @@ defmodule ReplaceIteration do
   def positive_non_zero?(i),
     do: i > 0
 
- 
+
+  def prefix_sum(arr), do: arr |> Enum.scan(&(&1 + &2))
 
 end
